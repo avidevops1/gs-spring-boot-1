@@ -56,5 +56,15 @@
             </plugin>
         </plugins>
     </build>
-
+<distributionManagement>
+    <repository>
+  <id>java</id>
+  <url>https://pkgs.dev.azure.com/azurewithavi/Java-Spring-boot/_packaging/java/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
 </project>
