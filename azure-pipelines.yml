@@ -28,9 +28,10 @@ stages:
     
     steps:
     - task: Maven@3
-      displayName: 'Maven Package'
+      displayName: 'Maven deploy'
       inputs:
         mavenPomFile: 'app/pom.xml'
+        goals: 'deploy'
 
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
