@@ -67,4 +67,5 @@
     <enabled>true</enabled>
   </snapshots>
 </repository>
+</distributionManagement>    
 </project>
