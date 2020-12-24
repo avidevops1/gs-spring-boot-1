@@ -6,7 +6,18 @@
     <groupId>org.springframework</groupId>
     <artifactId>gs-spring-boot</artifactId>
     <version>0.1.0</version>
-
+    <repositories>
+      <repository>
+        <id>java</id>
+        <url>https://pkgs.dev.azure.com/azurewithavi/Java-Spring-boot/_packaging/java/maven/v1</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    </repositories>     
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -56,16 +67,28 @@
             </plugin>
         </plugins>
     </build>
-    <distributionManagement>
-    <repository>
+    <repositories>
+      <repository>
         <id>java</id>
         <url>https://pkgs.dev.azure.com/azurewithavi/Java-Spring-boot/_packaging/java/maven/v1</url>
-    <releases>
+        <releases>
+          <enabled>true</enabled>
+        </releases>
+        <snapshots>
+          <enabled>true</enabled>
+        </snapshots>
+    </repository>
+  </repositories>
+<distributionManagement>
+   <repository>
+      <id>java</id>
+      <url>https://pkgs.dev.azure.com/azurewithavi/Java-Spring-boot/_packaging/java/maven/v1</url>
+      <releases>
         <enabled>true</enabled>
-    </releases>
-    <snapshots>
+      </releases>
+      <snapshots>
         <enabled>true</enabled>
-    </snapshots>
+      </snapshots>
    </repository>
-   </distributionManagement>    
+</distributionManagement>
 </project>
